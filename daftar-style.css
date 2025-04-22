@@ -1,0 +1,302 @@
+body{
+    width: Fixed(1440px);
+    height: Hug(2810px);
+    background-image: url('/css-img/bg/bg-2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color:white;
+    font-family: Lato;
+    margin: 0;
+    padding: 0;
+}
+
+#logo-login{
+    width: 50%;
+    height: 50%;
+    /* margin-top: 3vh; */
+}
+
+.txt-greeting{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+}
+
+#txt-gret1{
+    font-size: 20px;
+    font-weight: 600;
+    /* margin-bottom: 10vh; */
+}
+
+#txt-gret2{
+    font-size: medium;
+    font-weight: 350;
+}
+
+
+
+#google-btn{
+    height: 16px;
+    width: 16px;
+ 
+ }
+
+.akun-txt{
+    font-weight: 300;
+}
+
+#link-txt{
+    font-size: medium;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+
+.container-daftar {
+    background-color: #181A1CD6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+    width: 65vh;
+    margin-left: 450px;
+    margin-top: 15px;
+    border-radius: 24px;
+}
+
+
+.container-daftar img {
+    width: 158px;
+    height: 38px;
+
+    
+ }
+ .form-daftar{
+    padding:20px;
+    width: 300px;
+    /* height: 100%; */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.form-daftar label{
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+.form-daftar input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid #434242;
+    border-radius: 24px;
+    background-color: #22212381;
+}
+.form-daftar button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 24px;
+    background-color: #444444;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    /* margin-top: 1vh; */
+}
+
+.container-btn{
+    margin-top: 3vh;
+}
+.daftar-btn{
+    background-image: url('/css-img/google-btn.png'); /* Ganti dengan path gambar */
+    background-repeat: no-repeat;
+    background-position: 30px center; /* Gambar di kiri tengah */
+    padding-left: 40px; /* Memberikan ruang untuk ikon */
+}
+
+
+.form-daftar button:hover {
+    background-color: #2b2b2b;
+}
+.kata-sandi{
+    background-image: url('/css-img/eye-off.png'); /* Ganti dengan path gambar */
+    background-repeat: no-repeat;
+    background-position: 280px center; /* Gambar di kiri tengah */
+    padding-left: 40px; /* Memberikan ruang untuk ikon */
+}
+
+#atau-label {
+    text-align: center;
+    font-size: small;
+    font-weight: 400;
+    margin: 1.5vh 0;
+}
+
+
+/* responsiv web */
+@media (max-width:600px) {
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Lato;
+}
+
+.container-daftar{
+    width: 306px;
+    height: 452.28px;
+    border-radius: 8px;
+    gap: 20px;
+    margin: 0.5vh 0; 
+    margin-top: 1vh; 
+    background-color: #181A1CD6;   
+    top:172px;
+    left:27.7px;
+}
+
+#logo-login{
+    width: 94px;
+    height: 24px;
+
+}
+/* style txt welcome */
+.txt-greeting{
+    width: 118px;
+    height: 43.62px;
+    gap: 4.62px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 74px;
+  }
+
+#txt-gret1{
+    width: 55px;
+    height: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-align: center;
+
+}
+
+#txt-gret2{
+    width: 100%;
+    height: 14px;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+/* content username */
+.container-input-1{
+    width: 258px;
+    height: 45.47px;
+    gap:3.47px;
+
+}
+/* content password */
+.container-input-2{
+    width: 258px;
+    height: 66.4px;
+    gap:6.93px;
+    margin-top: 15px;
+
+}
+
+.form-daftar{
+    padding:20px;
+    width: 300px;
+    /* height: 100%; */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.form-daftar label{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
+.form-daftar input{
+    font-size: 9.24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.12px;
+    text-align: center;
+    width: 250px;
+    height: 13px;
+    border-radius: 12px;
+    padding: 8.09px 11.55px 8.09px 11.55px;
+    gap:  5.78px;
+    border: 0.58px solid #434242;
+    background-color: #22212381;
+    color: white;
+}
+.form-daftar button{
+    width: 258px;
+    height: 30.17px;
+    border-radius: 30.17px;
+    padding: 8.09px 11.55px 8.09px 11.55px;
+    gap: 5.78px;
+    background-color: #3d4142;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+/* text di bawah form password */
+.kata-sandi{
+    background-image: url('/css-img/eye-off.png'); /* Ganti dengan path gambar */
+    background-repeat: no-repeat;
+    background-position: 240px center; /* Gambar di kiri tengah */
+    width: 1px;
+    height: 1px;
+}
+
+.akun-txt{
+    font-weight: 300;
+    color:#858585
+}
+
+#link-txt{
+    /* font-size: medium; */
+    font-weight: 500;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+/* text diantara button */
+
+#atau-label {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.google-logo{
+    background-image: url('/css-img/google-btn.png'); /* Ganti dengan path gambar */
+    background-repeat: no-repeat;
+    background-position: 30px center; /* Gambar di kiri tengah */
+    padding-left: 40px; /* Memberikan ruang untuk ikon */
+    width: 1px;
+    height: 1px;
+}
+
+}
