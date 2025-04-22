@@ -1,0 +1,351 @@
+body{
+  /* Setting bg gambar di web */
+    background-image: url('/css-img/bg/bg-3.png'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color:white;
+    font-family: Lato;
+    margin: 0;
+    padding: 0;
+}
+
+.container-btn{
+    margin-top: 5vh;
+    /* margin-bottom: 5vh; */
+}
+
+.akun-txt{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#link-txt1{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    /* margin-left: 10px; */
+}
+#link-txt2{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    margin-left: 6vh;
+}
+
+
+
+#logo-login{
+    width: 50%;
+    height: 50%;
+    /* margin-top: 3vh; */
+}
+
+.txt-greeting{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+}
+
+#txt-gret1{
+    font-size: 20px;
+    font-weight: 600;
+    /* margin-bottom: 10vh; */
+}
+
+#txt-gret2{
+    font-size: medium;
+    font-weight: 350;
+}
+
+
+.container-login {
+    background-color: #181A1CD6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 65vh;
+    margin-left: 450px;
+    margin-top:5vh;
+    border-radius: 24px;
+}
+
+
+
+.container-login img {
+    width: 158px;
+    height: 38px;
+ }
+
+ .form-login{
+    padding:20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+/* setting text belum punya akun dan lupa sandi */
+#help{
+    font-size: small;
+}
+
+#forget{
+    display:inline-block;
+
+    margin-left:55px;
+}
+.form-login label{
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+.form-login input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid #434242;
+    border-radius: 24px;
+    background-color: #22212381;
+}
+.form-login button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 24px;
+    background-color: #3d4142;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    /* margin-top: 12px; */
+}
+.google-logo{
+    background-image: url('/css-img/google-btn.png'); /* Ganti dengan path gambar */
+    background-repeat: no-repeat;
+    background-position: 30px center; /* Gambar di kiri tengah */
+    padding-left: 40px; /* Memberikan ruang untuk ikon */
+}
+
+.form-login button:hover {
+    background-color: #2d3031;
+}
+
+.kata-sandi{
+    background-image: url('/css-img/eye-off.png'); /* Ganti dengan path gambar */
+    background-repeat: no-repeat;
+    background-position: 280px center; /* Gambar di kiri tengah */
+    padding-left: 40px; /* Memberikan ruang untuk ikon */
+}
+
+#atau-label {
+    text-align: center;
+    font-size: small;
+    font-weight: 500;
+    margin: 2vh
+    /* margin-top: 10px; */
+}
+
+#google-btn{
+    height: 16px;
+    width: 16px;
+ 
+ }
+
+ a{
+    color:white;
+ }
+
+
+
+
+ /* responsiv web */
+@media (max-width:600px) {
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Lato;
+   
+
+    }
+
+    .container-login{
+    flex-wrap: wrap;
+    margin: 0.5vh 0; 
+    margin-top: 1vh;
+    /* top: 172px;
+    left: 27.7px; */
+    /* padding: 24px; */
+    border-radius: 8px;
+    width: 306px;
+    height: 384px;
+    gap: 20px;
+    }
+
+    #logo-login{
+        width: 94px;
+        height: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .txt-greeting{
+      width: 112px;
+      height: 43.62px;
+      gap: 4.62px;
+      justify-content: center;
+      align-items: center;
+      margin: 0 74px;
+    }
+    
+    #txt-gret1{
+        width: 55px;
+        height: 25px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.2px;
+        text-align: center;
+
+    }
+    
+    #txt-gret2{
+        width: 100%;
+        height: 14px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 140%;
+        letter-spacing: 0.2px;
+        text-align: center;
+    }
+
+/* content username */
+.container-input-1{
+    width: 258px;
+    height: 45.47px;
+    gap:3.47px;
+
+}
+/* content password */
+.container-input-2{
+    width: 258px;
+    height: 66.4px;
+    gap:6.93px;
+    margin-top: 15px;
+
+}
+
+.form-login label{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    /* text-align: center; */
+}
+
+.form-login input{
+    font-size: 9.24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.12px;
+    text-align: center;
+    width: 250px;
+    height: 13px;
+    border-radius: 12px;
+    padding: 8.09px 11.55px 8.09px 11.55px;
+    gap:  5.78px;
+    border: 0.58px solid #434242;
+    background-color: #22212381;
+    color: white;
+}
+
+
+
+/* teks lupa kata sandi */
+.kata-sandi{
+    background-image: url('/css-img/eye-off.png'); /* Ganti dengan path gambar */
+    background-repeat: no-repeat;
+    background-position: 240px center; /* Gambar di kiri tengah */
+    width: 1px;
+    height: 1px;
+}
+
+.inner-pass{
+    width: 258px;
+    height: 14px;
+    gap: 81.45px;
+}
+
+.akun-txt{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
+
+#link-txt1{
+    font-size: 10px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
+#link-txt2{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    padding-left: 30px;
+}
+
+/* container button */
+.container-btn{
+    width: 258px;
+    height: 79.33px;
+    gap: 4px;
+}
+
+.form-login button{
+    width: 258px;
+    height: 30.17px;
+    border-radius: 30.17px;
+    padding: 8.09px 11.55px 8.09px 11.55px;
+    gap: 5.78px;
+    background-color: #3d4142;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.form-login button:hover {
+    background-color: #2d3031;
+}
+
+#atau-label {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.google-logo{
+    background-image: url('/css-img/google-btn.png'); /* Ganti dengan path gambar */
+    background-repeat: no-repeat;
+    background-position: 30px center; /* Gambar di kiri tengah */
+    padding-left: 40px; /* Memberikan ruang untuk ikon */
+    width: 1px;
+    height: 1px;
+}
+
+}
