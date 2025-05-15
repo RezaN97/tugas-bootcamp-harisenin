@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo List Apps</title>
+        <link rel="stylesheet" href="todoStyle.css">
+    </head>
+    <body onload="showDate(), addProfile()">
+    <div id="container-apps">
+        <header>
+            <div class="profile1">
+                <h2 id="profile-name"></h2>
+                <p id="jabatan"></p>
+            </div>
+            <div class="profile2">
+                <p id="dateDisplay"></p>
+                
+            </div>
+        </header>
+        
+        
+        <div class="form">
+            <h2>Todo List Apps</h1>
+            <main class="container-main">
+                <div class="form1">
+                    <label for="date" >Date</label>
+                    <input type="date" name="date" id="date">
+                    <label for="priority" >Priority</label>
+                    <select id="priority">
+                        <option value="High"> 🔴High</option>
+                        <option value="Medium"> 🟡Medium</option>
+                        <option value="Low"> 🟢Low</option>
+                    </select>
+                </div>
+                    <label for="task" id="label-task">Task</label>
+                    <textarea name="task" id="task" placeholder="Enter task.."></textarea>
+                    <button class="btn-submit" onclick="addItem()">Submit</button>
+                    
+                    <h3>To-Do List</h3>
+                    <ul id="listTodo"></ul>
+                    <h3>Done List</h3>
+                    <ul id="listDone"></ul>
+                <div class="container-delete">
+                    <button id="deleteBtn" onclick="clearData()">Delete</button>
+                </div>
+            </main>   
+        </div>
+    </div>
+        <script src="todolist.js"></script>
+    </body>
+    </html>
