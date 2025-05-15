@@ -39,21 +39,6 @@ const addItem = () => {
     listContent.appendChild(span)
     todo.appendChild(listContent)
     
-    
-    
-    //move list to done list
-    // document.querySelectorAll("#cBox").forEach(checkbox => {
-    // checkbox.addEventListener("change", function() {
-    //     let taskItem = this.closest("#task-item")
-    //     if (this.checked) {
-    //         done.appendChild(taskItem)
-    //     } else {
-    //         todo.appendChild(taskItem)
-    //     }
-            
-    //     });
-    // });
-    
     document.getElementById('task').value = ''
 }
 
