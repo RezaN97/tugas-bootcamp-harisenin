@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: coral;
+}
+
+input::placeholder{
+    color: white;
+}

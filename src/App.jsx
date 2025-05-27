@@ -8,10 +8,10 @@ function App() {
   return (
 
     <>
-    <SignIn/>
+    {/* <SignIn/> */}
     {/* <SignUp /> */}
     {/* <ListFilm /> */}
-      {/* <Index/> */}
+      <Index/>
     </>
   )
 }

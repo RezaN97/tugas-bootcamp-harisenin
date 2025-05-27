@@ -36,9 +36,9 @@ const SignUp = () => {
                         <span className='w-[258px] h-[14px] flex justify-start gap-[8px] text-[10px] font-[400] '>Sudah Punya Akun? <a className='font-[500] text-[10px]' href="#">Masuk</a></span>
 
                 <div className="w-[258px] h-[79.33px] flex flex-col justify-center items-center gap-[4px] my-2">
-                        <button className='w-[258px] h-[30.17px] bg-[#3D4142] border-1 text-sm font-medium rounded-[13.86px]'>Daftar</button>
+                        <button className='w-[258px] h-[30.17px] bg-[#3D4142] border-1 text-[10px] font-medium rounded-[13.86px]'>Daftar</button>
                         <p className='text-[10px] font-normal'>Atau</p>
-                        <button className='w-[258px] h-[30.17px] justify-center flex items-center gap-2 bg-[#3D4142]/10 border-1 text-sm font-medium rounded-[13.86px] '>
+                        <button className='w-[258px] h-[30.17px] justify-center flex items-center gap-2 bg-[#3D4142]/10 border-1 text-[10px] font-medium rounded-[13.86px] '>
                                 <img src={google} alt="google" />
                                 Daftar dengan Google
                         </button>
