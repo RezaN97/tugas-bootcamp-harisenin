@@ -12,6 +12,7 @@ function App() {
     {/* <SignUp /> */}
     {/* <ListFilm /> */}
       <Index/>
+
     </>
   )
 }

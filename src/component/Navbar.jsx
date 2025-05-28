@@ -1,27 +1,22 @@
-import halfLogo from '../img/logo-chill.png'
 import iconAvatar from '../img/navbar/avatar.png'
 import iconDropDown from '../img/navbar/dropdown.png'
 import dropdownAvatar from '../img/dropdown/icon1.png'
 import dropdownPremium from '../img/dropdown/icon2.png'
 import dropdownLogout from '../img/dropdown/icon3.png'
-
+import logo from '../img/logo-chill.png'
 
 const Navbar = () => {
+
     return(
         <>
-        <header className='bg-[#181A1C] flex w-[360px] h-[56px] px-[20px] py-[3vh]'>
+        <header className='bg-[#181A1C] flex w-[1440px] sm:w-[360px] max-w-[1440px] h-[94px] sm:h-[56px] px-[20px] py-[3vh]'>
                 <div className='w-[268px] h-[44px] flex gap-[12px]' >
-                    <img src={halfLogo} alt="Chill" className='w-[20px] h-[20px] gap-[4px]'/>
+                    <img src={logo} alt="logo" className='w-4 h-4'  />
                     <nav  className='flex gap-6 py-[1vh]'>
                         <li className='list-none text-white w-[28px] h-[14px] text-[10px] font-medium'>Series</li>
                         <li className='list-none text-white w-[20px] h-[14px] text-[10px] font-medium'>Film</li>
                         <li className='list-none text-white w-[53px] h-[14px] text-[10px] font-medium'>Daftar Saya</li>
                     </nav>
-                    {/* <div class="navbar-nav">
-                        <a href="#">Series</a>
-                        <a href="#">Film</a>
-                        <a href="#">Daftar Saya</a>
-                    </div> */}
                 </div>
                 <div class="setting-profile">
                     {/* <!-- new dropdown --> */}
@@ -35,11 +30,10 @@ const Navbar = () => {
                     </div>
             
                 </div>
-            {/* <!-- membuat dropdown menu --> */}
-            
-            {/* <!-- end dropdown menu --> */}
     </header>
         </>
+
+
     )
 }
 
@@ -67,3 +61,4 @@ const DropdownMenu = () => {
     </>
     )
 }
+

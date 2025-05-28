@@ -2,7 +2,7 @@ const CardSlideshow = () => {
     return(
         <>
            <section className="slideshow">
-            <div className="gbr-slideshow">
+            <div className="bg-[url(../img/isi-konten.png)]">
                 <div className="container-slideshow">
                     <h1 id="judul-slide">Duty After School</h1>
                     <p id="p-slide">
