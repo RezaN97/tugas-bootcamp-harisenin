@@ -1,37 +1,26 @@
-import iconAvatar from '../img/navbar/avatar.png'
-import iconDropDown from '../img/navbar/dropdown.png'
 import dropdownAvatar from '../img/dropdown/icon1.png'
 import dropdownPremium from '../img/dropdown/icon2.png'
 import dropdownLogout from '../img/dropdown/icon3.png'
+import Dropdown from './Dropdown'
 import logo from '../img/logo-chill.png'
 import fullLogo from '../img/logo-full.png'
 
 const Navbar = () => {
 
+
     return(
         <>
-        <header className='bg-[#181A1C] flex md:w-[1440px] sm:w-[360px] md:justify-between md:py-[25px] md:px-[80px]   md:h-[94px] sm:h-[56px] px-[20px] py-[3vh]'>
-                <div className='md:w-[1440px] md:text-4xl sm:text-[12px]  sm:w-[268px] md:h-[94px] sm:h-[44px] flex md:gap-[80px] sm:gap-[12px]' >
-                    <img src={fullLogo} alt="logo" className='md:block max-sm:-hidden md:w-[103.55px] md:h-[44px]  md:gap-[4px]'  />
-                    <img src={logo} alt="logo" className='md:hidden  sm:block sm:w-[20px] sm:h-[44px] gap-[4px]'  />
-                    <nav  className='flex md:gap-[80px] sm:gap-[12px] py-[1vh]'>
-                        <li className='list-none text-white md:w-[49px] sm:w-[28px] h-[14px] md:text-lg sm:text-[10px] font-medium'>Series</li>
-                        <li className='list-none text-white md:w-[35px] sm:w-[20px] h-[14px] md:text-lg sm:text-[10px] font-medium'>Film</li>
-                        <li className='list-none text-white md:w-[95px] sm:w-[53px] h-[14px] md:text-lg sm:text-[10px] font-medium'>Daftar Saya</li>
+        <header className='bg-[#181A1C] min-w-[300px] max-w-[600px]:w-[360px] flex justify-between md:py-[25px] md:px-[80px]  md:h-[94px] sm:h-[56px] px-[20px] py-[6px]'>
+                <div className=' md:text-4xl sm:text-[12px]  md:h-[94px] sm:h-[44px] flex md:gap-[80px] max-sm:gap-[12px]' >
+                    <img id='chill-full' src={fullLogo} alt="logo" className='hidden sm:block max-w-[600px]:hidden md:w-[103.55px] md:h-[44px] gap-[4px]'  />
+                    <img id='chill-logo' src={logo} alt="logo" className='block sm:hidden min-w-[300px]:block max-sm:w-[20px] max-sm:h-[18px] gap-[4px]'  />
+                    <nav  className='flex md:gap-[80px] max-sm:gap-[12px] py-[1vh]'>
+                        <li className='list-none cursor-pointer text-white md:w-[49px] max-sm:w-[28px] h-[14px] md:text-lg max-sm:text-[10px] font-medium'>Series</li>
+                        <li className='list-none cursor-pointer text-white md:w-[35px] max-sm:w-[20px] h-[14px] md:text-lg max-sm:text-[10px] font-medium'>Film</li>
+                        <li className='list-none cursor-pointer in-hover:blue text-white md:w-[95px] max-sm:w-[53px] h-[14px] md:text-lg max-sm:text-[10px] font-medium'>Daftar Saya</li>
                     </nav>
                 </div>
-                <div class="setting-profile">
-                    {/* <!-- new dropdown --> */}
-                    <div class="profile-dropdown">
-                        <div class="profile-dropdown">
-                            <div className='md:w-[76px] md:h-[40px] md:gap-[8px] sm:w-[40px] sm:h-[20px] flex sm:gap-[4px]'>
-                                <img className='md:w-[40px] md:h-[40px]  sm:w-[20px] sm:h-[20px]' src={iconAvatar} alt="User Avatar"/>
-                                <img id='btnDropDown' className='md:w-[28px] md:h-[28px] relative md:top-[10.02px] md:left-[7px]  sm:w-{16px} sm:h-[16px]' src={iconDropDown} alt="dropdown"/>
-                            </div>
-                        </div>
-                    </div>
-            
-                </div>
+              <Dropdown />
     </header>
         </>
 

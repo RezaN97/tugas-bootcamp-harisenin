@@ -1,20 +1,24 @@
 // import { useState } from 'react'
-import Index from './component/Home.jsx'
+import Home from './component/Home.jsx'
 import ListFilm from './component/Content/ListFilm.jsx'
 import SignIn from './component/SignIn.jsx'
 import SignUp from './component/SignUp.jsx'
 
 function App() {
+
+  
+
   return (
 
     <>
     {/* <SignIn/> */}
     {/* <SignUp /> */}
     {/* <ListFilm /> */}
-      <Index/>
+      <Home />
 
     </>
   )
 }
 
 export default App
+
