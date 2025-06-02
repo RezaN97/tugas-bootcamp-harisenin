@@ -10,8 +10,8 @@ const Navbar = () => {
 
     return(
         <>
-        <header className='bg-[#181A1C] min-w-[300px] max-w-[600px]:w-[360px] flex justify-between md:py-[25px] md:px-[80px]  md:h-[94px] sm:h-[56px] px-[20px] py-[6px]'>
-                <div className=' md:text-4xl sm:text-[12px]  md:h-[94px] sm:h-[44px] flex md:gap-[80px] max-sm:gap-[12px]' >
+        <header className='bg-[#181A1C]  w-[360px] h-[56px] sm:w-[1440px] sm:h-[94px] py-[6px] sm:py-[25px] px-[20px] sm:px-[80px] gap-[12px] flex items-center justify-between '>
+                <div className='flex w-[268px] h-[44px] gap-[12px] sm:w-[520.55px] sm:h-[44px] sm:gap-[80px] mt-5' >
                     <img id='chill-full' src={fullLogo} alt="logo" className='hidden sm:block max-w-[600px]:hidden md:w-[103.55px] md:h-[44px] gap-[4px]'  />
                     <img id='chill-logo' src={logo} alt="logo" className='block sm:hidden min-w-[300px]:block max-sm:w-[20px] max-sm:h-[18px] gap-[4px]'  />
                     <nav  className='flex md:gap-[80px] max-sm:gap-[12px] py-[1vh]'>
@@ -21,7 +21,7 @@ const Navbar = () => {
                     </nav>
                 </div>
               <Dropdown />
-    </header>
+        </header>
         </>
 
 
