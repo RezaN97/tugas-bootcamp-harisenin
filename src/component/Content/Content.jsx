@@ -12,12 +12,8 @@ const Content = () =>{
         <content>
             <CardSlideshow />
             <CardWatch />
-            <h1 className="w-[490px] h-[35px] font-bold text-3xl text-white mx-[5vw] ">Top Rating Film dan Series Hari ini</h1>
             <CardPoster />
-            <h1 className="w-[490px] h-[35px] font-bold text-3xl text-white mx-[5vw] ">Film Trending</h1>
-            <CardPoster />
-            <h1 className="w-[490px] h-[35px] font-bold text-3xl text-white mx-[5vw] ">Rilis Baru</h1>
-            <CardPoster />
+        
 
         </content>
         </>

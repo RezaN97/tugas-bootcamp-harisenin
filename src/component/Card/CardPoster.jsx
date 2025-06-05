@@ -9,44 +9,199 @@ import posterGuardian from '../../img/poster/poster30.png'
 import posterOtto from '../../img/poster/poster10.png'
 import posterMermaid from '../../img/poster/poster6.png'
 import posterMissing from '../../img/poster/poster13.png'
+import posterDuty from '../../img/poster/poster17.png'
+
+import blueLabel from './LabelEps.jsx'
 
 const CardPoster = () => {
     return (
-        <>
-        <Poster />
-        </>
+    <>
+    <TopMovie />
+    <TrendingMovie />
+    <NewMovie />
+
+    </>
     )
 }
     export default CardPoster
 
 
 
-const Poster = () => {
-    const containerImage = [
-    {name:'anime', src: posterAnime},
-    {name:'dino', src: posterJurassic},
-    {name:'sonic', src: posterSonic},
-    {name:'allofus', src: posterAllofus},
-    {name:'bighero', src: posterBighero},
-    {name:'war', src: posterWar},
-    {name:'antman', src: posterAntman},
-    {name:'guardian', src: posterGuardian},
-    {name:'otto', src: posterOtto},
-    {name:'mermaid', src: posterMermaid},
-    {name:'missing', src: posterMissing},
-    ]
+
+export const TopMovie = () => {
     return (
     <>
-    <div className='flex w-[1440px] h-[512px] gap-[32px] px-[80px] py-[40px]'>
-        {containerImage.slice(0, 5).map((poster, name) => (<img className='w-[234px] h-[365px] gap-[10px]' key={{name}} src={poster.src} alt={poster.name} />))}
+            {/* Mobile Screen */}
+    <div className="sm:hidden px-[5vw]  w-[428px] h-[189px] gap-[20px]">
+        <h2 className='w-[303px] h-[24px] text-white font-bold text-[20px] '>Top Rating Film dan Series Hari ini</h2>
+     
+        {/* Card */}
+        <div className='mt-2 w-[428px] h-[145px] gap-[16px] flex'>
+            <div className="w-[95px] h-[145px] gap-[4px]">
+                <img src={posterAnime} alt="anime" />
+            </div>
+            
+            <div className="w-[95px] h-[145px] gap-[4px]">
+                <img src={posterJurassic} alt="dino" />
+            </div>
+
+            <div className="w-[95px] h-[145px] gap-[4px]">
+                <img src={posterAllofus} alt="allofus" />
+            </div>
+
+            <div className="w-[95px] h-[145px] gap-[4px]">
+                <img src={posterSonic} alt="sonic" />
+            </div>
+        </div>
+
+    </div>
+
+    {/* fullscreen */}
+    <div className="max-sm:hidden  w-[1440px] h-[512px] px-[80px] py-[40px] gap-[32px]">
+        <h2 className='w-[485px] h-[35px] font-bold text-white text-[32px]'>Top Rating Film dan Series Hari ini</h2>
+         {/* card fullscreen */}
+         <div className="w-[1280px] h-[385px] gap-[28px] flex mt-5">
+           <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterAnime} alt="anime" className=''/>
+            </div>
+            
+            <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterJurassic} alt="dino" />
+            </div>
+
+            <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterSonic} alt="sonic" />
+            </div>
+
+            <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterAllofus} alt="allofus" />
+            </div>
+
+            <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterBighero} alt="bighero" />
+            </div>
+         </div>
     </div>
     </>
-     )
-    }
+    )
+}
 
+export const TrendingMovie = () => {
+    return (
+    <>
+                {/* Mobile Screen */}
+    <div className="sm:hidden px-[5vw]  w-[428px] h-[189px] gap-[20px]">
+        <h2 className='w-[303px] h-[24px] text-white font-bold text-[20px] '>Film Trending</h2>
+     
+        {/* Card */}
+        <div className='mt-2 w-[428px] h-[145px] gap-[16px] flex'>
+            <div className="w-[95px] h-[145px] gap-[4px]">
+                <img src={posterWar} alt="war" />
+            </div>
+            
+            <div className="w-[95px] h-[145px] gap-[4px]">
+                <img src={posterAntman} alt="antman" />
+            </div>
 
-        
+            <div className="w-[95px] h-[145px] gap-[4px]">
+                <img src={posterGuardian} alt="gog" />
+            </div>
 
+            <div className="w-[95px] h-[145px] gap-[4px]">
+                <img src={posterSonic} alt="sonic" />
+            </div>
+        </div>
+
+    </div>
+
+    {/* fullscreen */}
+    <div className="max-sm:hidden  w-[1440px] h-[512px] px-[80px] py-[40px] gap-[32px]">
+        <h2 className='w-[485px] h-[35px] font-bold text-white text-[32px]'>Film Trending</h2>
+         {/* card fullscreen */}
+         <div className="w-[1280px] h-[385px] gap-[28px] flex mt-5">
+           <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterAnime} alt="anime" className=''/>
+            </div>
+            
+            <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterJurassic} alt="dino" />
+            </div>
+
+            <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterSonic} alt="sonic" />
+            </div>
+
+            <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterAllofus} alt="allofus" />
+            </div>
+
+            <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterBighero} alt="bighero" />
+            </div>
+         </div>
+    </div>
+
+    </>
+    )
+}
+
+export const NewMovie = () => {
+    return (
+    <>
+                   {/* Mobile Screen */}
+    <div className="sm:hidden px-[5vw]  w-[428px] h-[189px] gap-[20px]">
+        <h2 className='w-[303px] h-[24px] text-white font-bold text-[20px] '>Rilis Baru</h2>
+     
+        {/* Card */}
+        <div className='mt-2 w-[428px] h-[145px] gap-[16px] flex'>
+            <div className="w-[95px] h-[145px] gap-[4px]">
+                <img src={posterMermaid} alt="mermaid" />
+            </div>
+            
+            <div className="w-[95px] h-[145px] gap-[4px]">
+                <img src={posterDuty} alt="duty" />
+            </div>
+
+            <div className="w-[95px] h-[145px] gap-[4px]">
+                <img src={posterBighero} alt="bighero" />
+            </div>
+
+            <div className="w-[95px] h-[145px] gap-[4px]">
+                <img src={posterMissing} alt="missing" />
+            </div>
+        </div>
+
+    </div>
+
+    {/* fullscreen */}
+    <div className="max-sm:hidden  w-[1440px] h-[512px] px-[80px] py-[40px] gap-[32px]">
+        <h2 className='w-[485px] h-[35px] font-bold text-white text-[32px]'>Rilis Baru</h2>
+         {/* card fullscreen */}
+         <div className="w-[1280px] h-[385px] gap-[28px] flex mt-5">
+           <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterAnime} alt="anime" className=''/>
+            </div>
+            
+            <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterJurassic} alt="dino" />
+            </div>
+
+            <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterSonic} alt="sonic" />
+            </div>
+
+            <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterAllofus} alt="allofus" />
+            </div>
+
+            <div className="w-[234px] h-[365px] gap-[10px]">
+                <img src={posterBighero} alt="bighero" />
+            </div>
+         </div>
+    </div>
+    </>
+    )
+}
 
 
 
