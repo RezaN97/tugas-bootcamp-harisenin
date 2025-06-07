@@ -15,9 +15,9 @@ const Navbar = () => {
                     <img id='chill-full' src={fullLogo} alt="logo" className='hidden sm:block max-w-[600px]:hidden md:w-[103.55px] md:h-[44px] gap-[4px]'  />
                     <img id='chill-logo' src={logo} alt="logo" className='block sm:hidden min-w-[300px]:block max-sm:w-[20px] max-sm:h-[18px] gap-[4px]'  />
                     <nav  className='flex md:gap-[80px] max-sm:gap-[12px] py-[1vh]'>
-                        <li className='list-none cursor-pointer text-white md:w-[49px] max-sm:w-[28px] h-[14px] md:text-lg max-sm:text-[10px] font-medium'>Series</li>
-                        <li className='list-none cursor-pointer text-white md:w-[35px] max-sm:w-[20px] h-[14px] md:text-lg max-sm:text-[10px] font-medium'>Film</li>
-                        <li className='list-none cursor-pointer in-hover:blue text-white md:w-[95px] max-sm:w-[53px] h-[14px] md:text-lg max-sm:text-[10px] font-medium'>Daftar Saya</li>
+                        <li className='list-none cursor-pointer text-white md:w-[49px] max-sm:w-[28px] h-[14px] md:text-lg max-sm:text-[10px] hover:text-blue-800 font-medium'>Series</li>
+                        <li className='list-none cursor-pointer text-white md:w-[35px] max-sm:w-[20px] h-[14px] md:text-lg max-sm:text-[10px] hover:text-blue-800 font-medium'>Film</li>
+                        <li className='list-none cursor-pointer in-hover:blue text-white md:w-[95px] max-sm:w-[53px] h-[14px] md:text-lg max-sm:text-[10px] hover:text-blue-800 font-medium'>Daftar Saya</li>
                     </nav>
                 </div>
               <Dropdown />

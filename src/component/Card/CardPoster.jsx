@@ -10,15 +10,26 @@ import posterOtto from '../../img/poster/poster10.png'
 import posterMermaid from '../../img/poster/poster6.png'
 import posterMissing from '../../img/poster/poster13.png'
 import posterDuty from '../../img/poster/poster17.png'
-
-import blueLabel from './LabelEps.jsx'
+import { BlueLabel } from '../Content/Content.jsx'
+import { ArrowLeftTop, ArrowRightTop, ArrowLeftTrending, ArrowRightTrending, ArrowLeftNew, ArrowRightNew } from '../Content/Content.jsx'
 
 const CardPoster = () => {
     return (
     <>
+    <ArrowLeftTop />
     <TopMovie />
+    <ArrowRightTop />
+
+    <ArrowLeftTrending />
     <TrendingMovie />
+    <ArrowRightTrending />
+
+    <ArrowLeftNew />
     <NewMovie />
+    <ArrowRightNew />
+    
+    <BlueLabel className="left-[7vw] bottom-[-92vh]"/>
+    
 
     </>
     )
@@ -62,7 +73,7 @@ export const TopMovie = () => {
          {/* card fullscreen */}
          <div className="w-[1280px] h-[385px] gap-[28px] flex mt-5">
            <div className="w-[234px] h-[365px] gap-[10px]">
-                <img src={posterAnime} alt="anime" className=''/>
+                <img src={posterAnime} alt="anime"/>
             </div>
             
             <div className="w-[234px] h-[365px] gap-[10px]">
@@ -120,23 +131,24 @@ export const TrendingMovie = () => {
          {/* card fullscreen */}
          <div className="w-[1280px] h-[385px] gap-[28px] flex mt-5">
            <div className="w-[234px] h-[365px] gap-[10px]">
-                <img src={posterAnime} alt="anime" className=''/>
+                <img src={posterWar} alt="anime" />
+
             </div>
             
             <div className="w-[234px] h-[365px] gap-[10px]">
-                <img src={posterJurassic} alt="dino" />
+                <img src={posterAntman} alt="antman" />
             </div>
 
             <div className="w-[234px] h-[365px] gap-[10px]">
-                <img src={posterSonic} alt="sonic" />
+                <img src={posterGuardian} alt="guardian" />
             </div>
 
             <div className="w-[234px] h-[365px] gap-[10px]">
-                <img src={posterAllofus} alt="allofus" />
+                <img src={posterOtto} alt="otto" />
             </div>
 
             <div className="w-[234px] h-[365px] gap-[10px]">
-                <img src={posterBighero} alt="bighero" />
+                <img src={posterMermaid} alt="mermaid" />
             </div>
          </div>
     </div>
@@ -179,15 +191,15 @@ export const NewMovie = () => {
          {/* card fullscreen */}
          <div className="w-[1280px] h-[385px] gap-[28px] flex mt-5">
            <div className="w-[234px] h-[365px] gap-[10px]">
-                <img src={posterAnime} alt="anime" className=''/>
+                <img src={posterMermaid} alt="mermaid" />
             </div>
             
             <div className="w-[234px] h-[365px] gap-[10px]">
-                <img src={posterJurassic} alt="dino" />
+                <img src={posterDuty} alt="duty" />
             </div>
 
             <div className="w-[234px] h-[365px] gap-[10px]">
-                <img src={posterSonic} alt="sonic" />
+                <img src={posterBighero} alt="bighero" />
             </div>
 
             <div className="w-[234px] h-[365px] gap-[10px]">
@@ -195,7 +207,7 @@ export const NewMovie = () => {
             </div>
 
             <div className="w-[234px] h-[365px] gap-[10px]">
-                <img src={posterBighero} alt="bighero" />
+                <img src={posterMissing} alt="missing" />
             </div>
          </div>
     </div>
